@@ -1,9 +1,9 @@
 {
-  "name": "new",
+  "name": "skokov",
   "authors": [
     "Marat"
   ],
-  "homepage": "https://github.com/yeffasol/new",
+  "homepage": "https://github.com/yeffasol/skokov",
   "private": true,
   "ignore": [
     "**/.*",
