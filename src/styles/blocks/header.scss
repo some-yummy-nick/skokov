@@ -1,3 +1,50 @@
-.header{
-background-color: rebeccapurple;
+.header {
+  background-color: #87509c;
+  background: url('../images/header-bg.jpg');
+  min-height: 886px;
+  color: #fff;
+  padding-top: 20px;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__logo{
+    margin-bottom: 100px;
+    color: $accentColor;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    a{
+      @include noDecor;
+    }
+  }
+&__bottom{
+  text-align: center;
+}
+  &__title{
+    max-width: 672px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  &__text{
+    max-width: 514px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media($tablet-widths) {
+    &__top {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__bottom{
+      text-align: left;
+    }
+    &__text{
+      margin-left: inherit;
+      margin-right: inherit;
+    }
+  }
 }

@@ -7,13 +7,16 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 html,
 body {
   height: 100%;
 }
-html{
+
+html {
   // set background color for overscroll
 }
+
 body {
   min-height: 100vh;
   position: relative;
@@ -25,42 +28,86 @@ body {
   line-height: 1.42;
   overflow-x: hidden;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
 }
-img{
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-a{
+
+a {
   color: inherit;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }
-.wrapper{
+
+.wrapper {
   display: table;
   height: 100%;
   width: 100%;
 }
-.content{
+
+.content {
   display: table-row;
   height: 100%;
 }
-.noscript{
+
+.noscript {
   display: block;
   text-align: center;
   position: fixed;
   opacity: 0.7;
-  top: 0 ;
+  top: 0;
   left: 50%;
   width: 300px;
   margin-left: -150px;
   color: #0000AA;
   background: #ff7b93;
 }
-.container{
+
+.container {
   @include container;
+}
+
+.btn {
+  background: $accentColor;
+  border-radius: 50px;
+  color: white;
+  @include inlineBlock();
+  font-size: 20px;
+  line-height: 74px;
+  margin-right: 20px;
+  margin-top: 30px;
+  text-align: center;
+  width: 215px;
+  @include noDecor;
+  &:hover {
+    background: darken(#fe504f, 10%);
+    color: white;
+  }
+  &--gray {
+    background: #343434;
+    &:hover {
+      background: lighten(#343434, 10%);
+    }
+  }
+}
+section{
+  text-align: center;
+}
+.section__title {
+  color: $secondTextColor;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section__text{
+  color: $textColor;
+  font-size: 16px;
 }

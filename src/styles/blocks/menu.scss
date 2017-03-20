@@ -1,0 +1,35 @@
+.menu {
+  position: relative;
+  &__list {
+    @include noList;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__item {
+    display: block;
+    padding: 15px;
+    &--active {
+      .menu__link {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $accentColor;
+    }
+    &:active {
+      color: rgba(#000, 0.3);
+      text-decoration: none;
+    }
+  }
+  @media ($tablet-widths) {
+
+  }
+}
