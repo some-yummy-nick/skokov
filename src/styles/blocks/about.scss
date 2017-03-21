@@ -1,0 +1,43 @@
+.about {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+  }
+  &__do, &__clients{
+    width: 48%;
+  }
+  &__slider{
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  &__slider-item{
+    width: 100%;
+    height: 375px;
+  }
+
+  &__slider-list{
+    @include noList;
+
+    li{
+      @include inlineBlock();
+    }
+  }
+}
+.flickity-page-dots{
+  bottom: 0;
+
+  .dot{
+    width: 35px;
+    height: 4px;
+    border-radius: 0;
+    background: #aeaeae;
+    opacity: 1;
+    margin: 0 5px;
+    &.is-selected{
+      background: $accentColor;
+    }
+  }
+}

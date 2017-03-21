@@ -54,5 +54,8 @@
     "run-sequence": "^1.2.2",
     "webpack": "^1.14.0",
     "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "lory.js": "^2.2.1"
   }
 }

@@ -20,7 +20,8 @@ module.exports = {
       query: {
         presets: ['es2015', 'stage-0']
       }
-    }]
+    }
+      ]
   },
   watch: NODE_ENV == 'development',
   watchOptions: {

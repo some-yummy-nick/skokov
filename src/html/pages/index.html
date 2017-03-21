@@ -23,6 +23,7 @@
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen, projection, print">
   <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
   <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
@@ -38,13 +39,24 @@
     <!--SERVICES-->
     @@include('../blocks/services.html')
     <!--SERVICES END-->
+
+    <!--CONTACT-->
+    @@include('../blocks/contact.html')
+    <!--CONTACT END-->
+
+    <!--ABOUT-->
+    @@include('../blocks/about.html')
+    <!--ABOUT END-->
+
   </div>
   <!--FOOTER-->
   @@include('../blocks/footer.html')
   <!--FOOTER END-->
+
 </div>
 <!-- build:js js/vendor.js -->
 <!-- endbuild -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
