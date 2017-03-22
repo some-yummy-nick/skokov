@@ -1,3 +1,5 @@
+http://yeffasol.github.io/skokov/
+
 ## Installation
 
 npm i && bower i
