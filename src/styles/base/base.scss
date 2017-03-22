@@ -74,7 +74,19 @@ a {
 .container {
   @include container;
 }
-
+.logo{
+  margin-bottom: 100px;
+  color: $accentColor;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  a{
+    @include noDecor;
+  }
+  &--footer{
+    margin-bottom: 0;
+  }
+}
 .btn {
   background: $accentColor;
   border-radius: 50px;
@@ -88,7 +100,7 @@ a {
   width: 215px;
   @include noDecor;
   &:hover {
-    background: darken(#fe504f, 10%);
+    background: #bb3030;
     color: white;
   }
   &--gray {
@@ -96,6 +108,13 @@ a {
     &:hover {
       background: lighten(#343434, 10%);
     }
+  }
+  &--footer{
+    float: right;
+    width: 130px;
+    line-height: 41px;
+    height: 41px;
+
   }
 }
 section{
@@ -112,6 +131,8 @@ section{
     color: white;
     font-size: 34px;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .section__text{

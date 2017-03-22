@@ -9,26 +9,16 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  &__logo{
-    margin-bottom: 100px;
-    color: $accentColor;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    a{
-      @include noDecor;
-    }
+  &__bottom {
+    text-align: center;
   }
-&__bottom{
-  text-align: center;
-}
-  &__title{
+  &__title {
     max-width: 672px;
     margin-bottom: 10px;
     font-size: 60px;
     font-weight: 700;
   }
-  &__text{
+  &__text {
     max-width: 514px;
     font-size: 20px;
     margin-left: auto;
@@ -39,10 +29,10 @@
       flex-wrap: nowrap;
       justify-content: space-between;
     }
-    &__bottom{
+    &__bottom {
       text-align: left;
     }
-    &__text{
+    &__text {
       margin-left: inherit;
       margin-right: inherit;
     }

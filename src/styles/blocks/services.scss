@@ -7,17 +7,17 @@
     margin-right: auto;
     color: $secondTextColor;
     font-weight: 700;
-     &::after{
-           position: absolute;
-           display: block;
-           content: "";
-       width: 61px;
-       height: 3px;
-       left: 50%;
-       bottom: -6px;
-       transform: translateX(-50%);
-       background-color: $accentColor;
-         }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 61px;
+      height: 3px;
+      left: 50%;
+      bottom: -6px;
+      transform: translateX(-50%);
+      background-color: $accentColor;
+    }
   }
   &__items {
     display: flex;
@@ -41,8 +41,8 @@
       z-index: 2;
     }
     @each $item in improvement, marketing, information, transformation, strategy, equity, digital, delivery {
-      &--#{$item}{
-        &::after{
+      &--#{$item} {
+        &::after {
           background: url('../images/services/#{$item}.png#services');
         }
       }

@@ -1,43 +1,133 @@
 .about {
+  margin-bottom: 50px;
   &__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     text-align: left;
   }
-  &__do, &__clients{
-    width: 48%;
+  &__do, &__clients {
+    width: 100%;
   }
-  &__slider{
-    width:100%;
-    height: 400px;
+  &__do {
+    p {
+      line-height: 24px;
+    }
+  }
+  &__slider {
+    width: 310px;
+    height: 220px;
     overflow: hidden;
   }
-  &__slider-item{
+  &__slider-item {
     width: 100%;
-    height: 375px;
+    height: 195px;
   }
 
-  &__slider-list{
+  &__slider-list {
     @include noList;
-
-    li{
+    li {
       @include inlineBlock();
+    }
+    img {
+      width: 100px;
+    }
+  }
+  @media($tablet-widths) {
+    &__slider {
+      width: 430px;
+      height: 300px;
+    }
+    &__slider-item {
+      height: 275px;
+    }
+    &__slider-list {
+      img {
+        width: 140px;
+      }
+
+    }
+  }
+  @media($desktop-widths) {
+    &__items {
+      justify-content: space-between;
+    }
+    &__do, &__clients {
+      width: 48%;
+    }
+    &__slider {
+      width: 565px;
+      height: 400px;
+    }
+    &__slider-item {
+      height: 375px;
+    }
+    &__slider-list {
+
+      img {
+        width: 185px;
+      }
+
     }
   }
 }
-.flickity-page-dots{
+
+.flickity-page-dots {
   bottom: 0;
 
-  .dot{
+  .dot {
     width: 35px;
     height: 4px;
     border-radius: 0;
     background: #aeaeae;
     opacity: 1;
     margin: 0 5px;
-    &.is-selected{
+    &.is-selected {
       background: $accentColor;
+    }
+  }
+}
+
+.team {
+  font-size: 0;
+  &__item {
+    @include inlineBlock();
+    position: relative;
+    &:hover {
+      .team__hover {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  &__hover {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+    background-color: $accentColor;
+    color: #ffffff;
+    transform: translateX(100%);
+    transition: all ease-out .3s;
+    h4 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 35px;
+      max-width: 110px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      padding-top: 10px;
+      border-top: 1px solid #bb3030;
+    }
+    span {
+      font-size: 12px;
     }
   }
 }

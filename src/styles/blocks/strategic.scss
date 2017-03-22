@@ -1,0 +1,33 @@
+.strategic {
+  height: 400px;
+  background: url(../images/strategic-bg.jpg) no-repeat;
+  color: #fff;
+  p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__circle {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: $accentColor;
+    &:hover {
+      background-color: #bb3030;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 32%;
+      left: 42%;
+      border: 18px solid transparent;
+      border-left: 25px solid white;
+    }
+  }
+}
